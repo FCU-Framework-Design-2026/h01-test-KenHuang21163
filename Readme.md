@@ -5,19 +5,19 @@
 
 ### ✍ 練習 2.4.3：象棋翻棋遊戲
 > [!TIP]
-> * 考慮一個象棋翻棋遊戲，32 個棋子會隨機的落在 4*8的棋盤上。透過 Chess 的建構子產生這些棋子並隨機編排位置，再印出這些棋子的名字、位置
-> 	* ChessGame
+> * 考慮一個象棋翻棋遊戲，32 個棋子會隨機的落在 4*8的棋盤上。透過 org.example.Chess 的建構子產生這些棋子並隨機編排位置，再印出這些棋子的名字、位置
+> 	* org.example.ChessGame
 > 	    * void showAllChess(); 
 > 	    * void generateChess();
-> 	* Chess: 
-> 	    * Chess(name, weight, side, loc); 
+> 	* org.example.Chess: 
+> 	    * org.example.Chess(name, weight, side, loc); 
 > 	    * String toString();	
 > * 同上， 
->     * ChessGame 繼承一個抽象的 AbstractGame; AbstractGame 宣告若干抽象的方法：
+>     * org.example.ChessGame 繼承一個抽象的 AbstractGame; AbstractGame 宣告若干抽象的方法：
 >         * setPlayers(Player, Player)
 >         * boolean gameOver()
 >         * boolean move(int location)
-> * 撰寫一個簡單版、非 GUI 介面的 Chess 系統。使用者可以在 console 介面輸入所要選擇的棋子的位置 (例如 A2, B3)，若該位置的棋子未翻開則翻開，若以翻開則系統要求輸入目的的位置進行移動或吃子，如果不成功則系統提示錯誤回到原來狀態。每個動作都會重新顯示棋盤狀態。
+> * 撰寫一個簡單版、非 GUI 介面的 org.example.Chess 系統。使用者可以在 console 介面輸入所要選擇的棋子的位置 (例如 A2, B3)，若該位置的棋子未翻開則翻開，若以翻開則系統要求輸入目的的位置進行移動或吃子，如果不成功則系統提示錯誤回到原來狀態。每個動作都會重新顯示棋盤狀態。
 > * 規則：請參考 [這裏](https://zh.wikipedia.org/wiki/%E6%9A%97%E6%A3%8B#%E5%8F%B0%E7%81%A3%E6%9A%97%E6%A3%8B)
 > 
 > ```
